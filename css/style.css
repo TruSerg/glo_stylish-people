@@ -402,13 +402,22 @@ button {
     flex-wrap: wrap;
 }
 
-.modal-input {
+.modal-input-name {
     margin-right: 30px;
     height: 40px;
     padding: 10px;
     border-radius: 20px;
     border-style: none;
     margin-bottom: 30px;
+}
+
+.modal-input-phone {
+	margin-right: 30px;
+	height: 40px;
+	padding: 10px;
+	border-radius: 20px;
+	border-style: none;
+	margin-bottom: 30px;
 }
 
 .cart-table {

@@ -1,0 +1,27 @@
+{
+  "name": "stylish_people",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TruSerg/stylish_people.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TruSerg/stylish_people/issues"
+  },
+  "homepage": "https://github.com/TruSerg/stylish_people#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "swiper": "^8.0.7"
+  }
+}

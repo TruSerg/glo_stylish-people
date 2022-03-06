@@ -104,6 +104,9 @@ const cart = () => {
   };
 
   const sendForm = () => {
+    const inputName = document.querySelector(".modal-input-name");
+    const inputPhone = document.querySelector(".modal-input-phone");
+
     const cartArray = localStorage.getItem("cart")
       ? JSON.parse(localStorage.getItem("cart"))
       : [];
@@ -112,8 +115,8 @@ const cart = () => {
       method: "POST",
       body: JSON.stringify({
         cart: cartArray,
-        name: "",
-        phone: "",
+        name: inputName.value,
+        phone: inputPhone.value,
       }),
     }).then(() => {
       cart.style.display = "";
@@ -124,6 +127,7 @@ const cart = () => {
     e.preventDefault();
 
     sendForm();
+    localStorage.removeItem("cart");
   });
 
   cartBtn.addEventListener("click", () => {
