@@ -25,22 +25,38 @@ img {
 .navigation-link {
     text-decoration: none;
     text-transform: uppercase;
-    color: #939699;
+    color: #8F79D4;
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.5px;
+	 transition: 0.3s;
+}
+
+.navigation-link:hover {
+	color: #c0b2eb;
 }
 
 button {
     cursor: pointer;
 }
 
+.logo-link svg {
+	fill: #794f45; 
+	max-width: 60%;
+	height: 80px;
+	transition: 0.3s;
+}
+
+.logo-link svg:hover {
+	fill: #805ceb;
+}
+
 .button {
     padding: 10px 20px;
-    background: #4592FF;
+    background: #8F79D4;
     border-radius: 20px;
     border: none;
     color: #fff;
@@ -52,6 +68,11 @@ button {
     line-height: 20px;
     display: flex;
     align-items: center;
+	 transition: 0.3s;
+}
+
+.button:hover {
+	background: #7349f0;
 }
 
 .button-icon,
@@ -304,7 +325,7 @@ button {
 }
 
 .footer {
-    background: #8F79D4;
+    background: #794f45;
     padding-top: 45px;
     padding-bottom: 40px;
     color: #fff;
